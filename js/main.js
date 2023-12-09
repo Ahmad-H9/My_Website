@@ -62,7 +62,6 @@ window.onscroll = function(){
     `;
     mainTitle[0].style = `
     color: var(--heading-color);
-    border-color: black;
 
     `;
   }
@@ -103,7 +102,7 @@ window.onscroll = function(){
     `;
     mainTitle[1].style = `
     color: var(--heading-color);
-    border-color: black;
+    border-color: var(--heading-color);
 
     `;
   }
