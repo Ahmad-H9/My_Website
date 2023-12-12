@@ -418,7 +418,7 @@ header nav ul .btn-lbl:hover{
 }
 
 .portfolio .box .holder {
-  height: 212px;
+  height: 160px;
   overflow: hidden;
 }
 
@@ -454,7 +454,6 @@ header nav ul .btn-lbl:hover{
 .portfolio .box .techs {
   padding: 12px;
   display: flex;
-  justify-content: flex-end;
   gap: 8px;
   border-bottom: 1px solid var(--border-color);
 }
