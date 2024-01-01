@@ -1,18 +1,21 @@
-
 // Start Dark Mode
 let toggleBTN = document.querySelector("#toggle-btn");
 let label = document.querySelector(".btn-lbl");
 let body = document.querySelector("body");
-let darkMode = false;
 
-toggleBTN.addEventListener("change", (event)=>{
+let darkMode = true;
+
+
+
+
+toggleBTN.addEventListener("change", (event) => {
   darkMode = event.target.checked;
   if (darkMode) {
     body.classList.add("dark");
-  label.innerHTML = `<i class="fa-solid fa-sun"></i>`;
+    label.innerHTML = `<i class="fa-solid fa-sun"></i>`;
   } else {
     body.classList.remove("dark");
-  label.innerHTML = `<i class="fa-solid fa-moon"></i>`;
+    label.innerHTML = `<i class="fa-solid fa-moon"></i>`;
   }
 });
 // End Dark Mode
@@ -24,8 +27,8 @@ let spanBefore = document.querySelectorAll(".before");
 let spanAfter = document.querySelectorAll(".after");
 let section = document.querySelectorAll(".section");
 
-window.onscroll = function(){  
-  if (window.scrollY >= section[0].offsetTop -200) {
+window.onscroll = function () {
+  if (window.scrollY >= section[0].offsetTop - 200) {
     spanBefore[0].style = `
     transform: scale(1);
     -webkit-transform: scale(1);
@@ -65,7 +68,7 @@ window.onscroll = function(){
 
     `;
   }
-  if (window.scrollY >= section[1].offsetTop -250) {
+  if (window.scrollY >= section[1].offsetTop - 500) {
     spanBefore[1].style = `
     transform: scale(1);
     -webkit-transform: scale(1);
@@ -106,8 +109,6 @@ window.onscroll = function(){
 
     `;
   }
-}
-
-
+};
 
 // End Heading Animation
