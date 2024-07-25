@@ -3,7 +3,7 @@ let toggleBTN = document.querySelector("#toggle-btn");
 let label = document.querySelector(".btn-lbl");
 let body = document.querySelector("body");
 
-let darkMode = true;
+let darkMode = false;
 
 
 
@@ -31,17 +31,9 @@ window.onscroll = function () {
   if (window.scrollY >= section[0].offsetTop - 200) {
     spanBefore[0].style = `
     transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
     `;
     spanAfter[0].style = `
     transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
     `;
     mainTitle[0].style = `
     color: var(--sec1-background-color);
@@ -51,17 +43,9 @@ window.onscroll = function () {
   } else {
     spanBefore[0].style = `
     transform: scale(0.25);
-    -webkit-transform: scale(0.25);
-    -moz-transform: scale(0.25);
-    -ms-transform: scale(0.25);
-    -o-transform: scale(0.25);
     `;
     spanAfter[0].style = `
     transform: scale(0.25);
-    -webkit-transform: scale(0.25);
-    -moz-transform: scale(0.25);
-    -ms-transform: scale(0.25);
-    -o-transform: scale(0.25);
     `;
     mainTitle[0].style = `
     color: var(--heading-color);
@@ -71,37 +55,32 @@ window.onscroll = function () {
   if (window.scrollY >= section[1].offsetTop - 500) {
     spanBefore[1].style = `
     transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
     `;
     spanAfter[1].style = `
     transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
     `;
     mainTitle[1].style = `
     color: var(--sec1-background-color);
     border-color: transparent;
     transition-delay: 0.25s;
     `;
+
+    spanBefore[0].style = `
+    transform: scale(0.25);
+    `;
+    spanAfter[0].style = `
+    transform: scale(0.25);
+    `;
+    mainTitle[0].style = `
+    color: var(--heading-color);
+
+    `;
   } else {
     spanBefore[1].style = `
     transform: scale(0.25);
-    -webkit-transform: scale(0.25);
-    -moz-transform: scale(0.25);
-    -ms-transform: scale(0.25);
-    -o-transform: scale(0.25);
     `;
     spanAfter[1].style = `
     transform: scale(0.25);
-    -webkit-transform: scale(0.25);
-    -moz-transform: scale(0.25);
-    -ms-transform: scale(0.25);
-    -o-transform: scale(0.25);
     `;
     mainTitle[1].style = `
     color: var(--heading-color);

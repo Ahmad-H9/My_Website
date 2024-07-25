@@ -4,10 +4,6 @@
   padding: 0;
   margin: 0;
   transition: var(--main-trans);
-  -webkit-transition: var(--main-trans);
-  -moz-transition: var(--main-trans);
-  -ms-transition: var(--main-trans);
-  -o-transition: var(--main-trans);
 }
 
 html {
@@ -111,10 +107,6 @@ a {
   z-index: 1;
   overflow: hidden;
   transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
 }
 
 .main-title .before,
@@ -126,15 +118,7 @@ a {
   background-color: var(--main-color);
   z-index: -1;
   transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
   transform: scale(0.25);
-  -webkit-transform: scale(0.25);
-  -moz-transform: scale(0.25);
-  -ms-transform: scale(0.25);
-  -o-transform: scale(0.25);
 }
 
 .main-title .before {
@@ -216,15 +200,7 @@ header nav li > a::before {
   z-index: -1;
   transform-origin: center;
   transition: var(--main-trans);
-  -webkit-transition: var(--main-trans);
-  -moz-transition: var(--main-trans);
-  -ms-transition: var(--main-trans);
-  -o-transition: var(--main-trans);
   transform: scaleX(0);
-  -webkit-transform: scaleX(0);
-  -moz-transform: scaleX(0);
-  -ms-transform: scaleX(0);
-  -o-transform: scaleX(0);
 }
 
 header nav li > a::before {
@@ -251,10 +227,6 @@ header nav ul .btn-lbl{
   font-size: 30px;
   cursor: pointer;
   transition: 0.075s;
-  -webkit-transition: 0.075s;
-  -moz-transition: 0.075s;
-  -ms-transition: 0.075s;
-  -o-transition: 0.075s;
 }
 header nav ul .btn-lbl:hover{
   color: var(--main-color);
@@ -303,19 +275,11 @@ header nav ul .btn-lbl:hover{
   left: 0%;
   z-index: 1;
   transform: skew(0, 10deg);
-  -webkit-transform: skew(0, 10deg);
-  -moz-transform: skew(0, 10deg);
-  -ms-transform: skew(0, 10deg);
-  -o-transform: skew(0, 10deg);
 }
 
 .landing::after {
   right: 0%;
   transform: skew(0, -10deg);
-  -webkit-transform: skew(0, -10deg);
-  -moz-transform: skew(0, -10deg);
-  -ms-transform: skew(0, -10deg);
-  -o-transform: skew(0, -10deg);
 }
 
 .landing .container {
@@ -402,19 +366,11 @@ header nav ul .btn-lbl:hover{
   background-color: var(--card-background-color);
   text-transform: capitalize;
   border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
 }
 
 .portfolio .box:hover {
   box-shadow: 0 2px 15px var(--shadow-hover-color);
   transform: translateY(-5px);
-  -webkit-transform: translateY(-5px);
-  -moz-transform: translateY(-5px);
-  -ms-transform: translateY(-5px);
-  -o-transform: translateY(-5px);
 }
 
 .portfolio .box .holder {
@@ -463,10 +419,6 @@ header nav ul .btn-lbl:hover{
   color: var(--heading-color);
 
   border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
 }
 .portfolio .box .info {
   padding: 12px;
@@ -513,20 +465,12 @@ header nav ul .btn-lbl:hover{
   80%,
   100% {
     transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
   }
 
   20%,
   40%,
   60% {
     transform: translateX(7px);
-    -webkit-transform: translateX(7px);
-    -moz-transform: translateX(7px);
-    -ms-transform: translateX(7px);
-    -o-transform: translateX(7px);
   }
 }
 
@@ -565,15 +509,11 @@ header nav ul .btn-lbl:hover{
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
+}
+.my-skills .skills li span {
+  font-size: 16px;
+  font-weight: 300;
 }
 .my-skills img {
   width: 500px;
