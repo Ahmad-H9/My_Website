@@ -1,11 +1,9 @@
-// Start Dark Mode
+// Dark Mode
 let toggleBTN = document.querySelector("#toggle-btn");
 let label = document.querySelector(".btn-lbl");
 let body = document.querySelector("body");
 
-let darkMode = false;
-
-
+let darkMode;
 
 
 toggleBTN.addEventListener("change", (event) => {
@@ -18,10 +16,9 @@ toggleBTN.addEventListener("change", (event) => {
     label.innerHTML = `<i class="fa-solid fa-moon"></i>`;
   }
 });
-// End Dark Mode
 
 
-// Start Heading Animation
+// Heading Animation
 let mainTitle = document.querySelectorAll(".main-title");
 let spanBefore = document.querySelectorAll(".before");
 let spanAfter = document.querySelectorAll(".after");
@@ -30,10 +27,12 @@ let section = document.querySelectorAll(".section");
 window.onscroll = function () {
   if (window.scrollY >= section[0].offsetTop - 200) {
     spanBefore[0].style = `
-    transform: scale(1);
+    animation: LTR 0.4s linear forwards;
+    -webkit-animation: LTR 0.4s linear forwards;
     `;
     spanAfter[0].style = `
-    transform: scale(1);
+    animation: RTL 0.4s linear forwards;
+    -webkit-animation: RTL 0.4s linear forwards;
     `;
     mainTitle[0].style = `
     color: var(--sec1-background-color);
@@ -42,22 +41,26 @@ window.onscroll = function () {
     `;
   } else {
     spanBefore[0].style = `
-    transform: scale(0.25);
+    animation: Reverse-LTR 0.4s linear forwards;
+    -webkit-animation: Reverse-LTR 0.4s linear forwards;
     `;
     spanAfter[0].style = `
-    transform: scale(0.25);
+    animation: Reverse-RTL 0.4s linear forwards;
+    -webkit-animation: Reverse-RTL 0.4s linear forwards;
     `;
     mainTitle[0].style = `
     color: var(--heading-color);
 
     `;
   }
-  if (window.scrollY >= section[1].offsetTop - 500) {
+  if (window.scrollY >= section[1].offsetTop - 280) {
     spanBefore[1].style = `
-    transform: scale(1);
+    animation: LTR 0.4s linear forwards;
+    -webkit-animation: LTR 0.4s linear forwards;
     `;
     spanAfter[1].style = `
-    transform: scale(1);
+    animation: RTL 0.4s linear forwards;
+    -webkit-animation: RTL 0.4s linear forwards;
     `;
     mainTitle[1].style = `
     color: var(--sec1-background-color);
@@ -66,21 +69,25 @@ window.onscroll = function () {
     `;
 
     spanBefore[0].style = `
-    transform: scale(0.25);
+    animation: Reverse-LTR 0.4s linear forwards;
+    -webkit-animation: Reverse-LTR 0.4s linear forwards;
     `;
     spanAfter[0].style = `
-    transform: scale(0.25);
+    animation: Reverse-RTL 0.4s linear forwards;
+    -webkit-animation: Reverse-RTL 0.4s linear forwards;
     `;
     mainTitle[0].style = `
     color: var(--heading-color);
-
     `;
-  } else {
+  } 
+  else {
     spanBefore[1].style = `
-    transform: scale(0.25);
+    animation: Reverse-LTR 0.4s linear forwards;
+    -webkit-animation: Reverse-LTR 0.4s linear forwards;
     `;
     spanAfter[1].style = `
-    transform: scale(0.25);
+    animation: Reverse-RTL 0.4s linear forwards;
+    -webkit-animation: Reverse-RTL 0.4s linear forwards;
     `;
     mainTitle[1].style = `
     color: var(--heading-color);
@@ -89,5 +96,3 @@ window.onscroll = function () {
     `;
   }
 };
-
-// End Heading Animation

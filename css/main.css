@@ -52,7 +52,7 @@ body {
   --sec1-background-color: #000;
   --sec2-background-color: #222;
   --s-color: #101010;
-  --port-cont-color: #0b0b0b;
+  --card-background-color: #0b0b0b;
   --heading-color: #fff;
   --text-color: #888;
   --shadow-color: #333;
@@ -105,10 +105,6 @@ a {
   }
   .landing img {
     display: none;
-  }
-  /* Portfolio */
-  .portfolio .container {
-    width: 350px;
   }
   /* Skills */
   .skills img {
@@ -500,7 +496,7 @@ header .container nav ul .btn-lbl:hover {
 
 /* Portfolio */
 .portfolio {
-  background-color: var(--port-cont-color);
+  background-color: var(--sec1-background-color);
   padding: var(--sect-padding);
   overflow: hidden;
 }
@@ -512,8 +508,6 @@ header .container nav ul .btn-lbl:hover {
   gap: 30px;
   height: 400px;
   overflow-y: scroll;
-  -webkit-box-shadow: 0px 2px 10px 10px inset var(--shadow-color);
-          box-shadow: 0px 2px 10px 10px inset var(--shadow-color);
 }
 .portfolio .container::-webkit-scrollbar {
   width: 5px;
@@ -529,7 +523,7 @@ header .container nav ul .btn-lbl:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: var(--sec1-background-color);
+  background-color: var(--card-background-color);
   text-transform: capitalize;
   min-height: 270px;
   border-radius: 10px;
